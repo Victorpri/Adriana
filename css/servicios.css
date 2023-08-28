@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: rgb(238, 246, 252);
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}       
+body{
+    width: 100%;
+    background-color: rgb(238, 246, 252);
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 250px;
+    z-index: 1;
+}    
+.logo:hover {
+    transform: scale(1.5);
+}
+.titulo{
+    position: relative;
+    margin-left: 115px;
+    margin-top: 40px;
+}
+.titulo:hover{
+    transform: scale(1.2);
+    
+}
+
+.navegador{
+    background-color: rgb(66, 66, 66);
+    padding: 20px;
+    
+}
+.navegador .menu ul li a{
+    color:rgb(0, 0, 0);
+
+}
+
+.navegador .menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    padding:1px 40px;
+}
+.menu li:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.submenu{
+    display: none;
+    background-color: rgb(139, 139, 139);
+    position:absolute;
+    list-style: none;
+    border-radius: 10%;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+.submenu li{
+    padding: 5px 10px;
+}
+.submenu li.hover{
+    background-color: rgb(43, 220, 226);
+}
+
+.intro-servicios{
+    position: relative;
+}
+
+.tituloServicios p{
+    border:solid 2px black;
+}

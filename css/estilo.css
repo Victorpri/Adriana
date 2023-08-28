@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(238, 246, 252);
+    width: 100%;
+    padding: 40px;
+    display: flex;
+}       
+body{
+    width: 100%;
+    background-color: rgb(238, 246, 252);
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 250px;
+    z-index: 1;
+}    
+.logo:hover {
+    transform: scale(1.5);
+}
+.titulo{
+    position: relative;
+    margin-left: 115px;
+    margin-top: 40px;
+}
+.titulo:hover{
+    transform: scale(1.2);
+    
+}
+
+/*menu*/
+
+
+.navegador{
+    background-color: rgb(66, 66, 66);
+    padding: 20px;
+    
+}
+.navegador .menu ul li a{
+    color:rgb(0, 0, 0);
+
+}
+
+
+
+.navegador .menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li a{
+    position: relative;
+    padding:1px 40px;
+}
+.menu li:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+/*submenu*/
+.submenu{
+    display: none;
+    /*position:relative;*/
+    background-color: rgb(139, 139, 139);
+    position:absolute;
+    list-style: none;
+    border-radius: 10%;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+.submenu li{
+    padding: 5px 10px;
+}
+.submenu li.hover{
+    background-color: rgb(43, 220, 226);
+}
+
+.banner_estatico{
+
+    width: 1200px;
+    height: 450px;
+    margin-top: 70px;
+    text-align:inherit;
+    display: flex;
+    z-index: 1;
+    background-size: 100%;
+    background-image: url(../img/fondo-banner.png);
+    border-radius: 7%;
+    box-shadow: 1px 1px 3px 3px rgb(0, 0, 0);
+}
+
+.banner_estatico .titulo_banner{
+    text-align:left;
+    font-size:300%;
+    width: 350px;
+    margin-top: 200px;
+    font-weight: normal;
+    color: rgb(30, 161, 4);
+    margin-left: 50px;
+}
+
+.banner_estatico p{
+    font-size: 150%;
+    width: 750px;
+    margin-top: 170px;
+    color: rgb(11, 95, 17);
+    border-left: solid 3px rgb(0, 0, 0);
+}
+
+/*contenido*/
+
+.contenido{
+    display: table;
+    width: 1200px;
+    margin-top: 15px;
+    margin-right: 600px;
+    
+}
+
+/*renderizar contenido de estado a columna*/
+
+.entidad{
+    padding: 50PX 20PX 50PX 20px;
+    width: 620px;
+
+}
+
+/*se fija el conteo de las columnas*/
+
+.articulo{
+column-count: 2;
+column-gap: 50px;
+border-bottom: solid 3px rgb(97, 97, 97);
+}
+
+.articulo p{
+    text-align: justify;
+}
+
+.comentarios{
+    width: 1200px;
+    margin-top: 25px;
+}
+
+.comentarios article{
+    display: table;
+    padding: 22px;
+}
+
+.comentarios article div{
+    display: table-cell;
+    width: 220px;
+    padding-right: 22px;
+}
+.comentarios article:nth-child(odd) {
+    padding: 21px;
+    background: #808080;
+    border: 1px solid #d7d7d7;
+    border-radius: 11px;
+}
+
+form {
+    margin-top: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #d7d7d7;
+}
+
+form p {
+    display: table;
+    margin-bottom: 22px;
+    padding: 0 22px;
+}
+
+form label {
+    display: table-cell;
+    width: 140px;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="url"] {
+    display: table-cell;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    display: table-cell;
+    width: 80px;
+    height: 30px;
+    background-color: #373738;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Victor Mono', monospace;
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #d7d7d7;
+    
+}
+
+form input[type="submit"] {
+    margin-left: 162px;
+}
+
+
+footer{
+    position: absolute;
+    background-color:  rgb(66, 66, 66);
+    justify-content: space-between;
+}
+
+.pie{
+    width: 100%;
+}
+
+.pie section{
+    position: relative;
+    display: table-cell;
+    color: aliceblue;
+    padding-right: 90px;
+}
+
+
+.pie section a{
+    color: rgb(153, 153, 153);
+
+}
