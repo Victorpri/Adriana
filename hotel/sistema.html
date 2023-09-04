@@ -3,9 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="">
+    <link rel="stylesheet" href="./css/sistema.css">
     <title>Document</title>
 </head>
 <body>
-    <iframe src="./banner.html" frameborder="0"></iframe>
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
+            <span>
+                <i class="icono_menu"><img src="../img/logo verde.png" alt=""></i>
+            </span>
+            <a href="#reservas" onclick="seleccionar(this)">Reservas</a>
+            <a href="#contactenos" onclick="seleccionar(this)">Contactenos</a>
+            <a href="#registro" onclick="seleccionar(this)">Registro</a>
+        </nav>
+    </header>
+
+    <section id="intro" class="bloque">
+        <div class="contenido">
+            <div>
+                <h1>Esto es un titulo</h1>
+            </div>
+            <div class="formulario">
+                <form action="#servicios">
+                    <h2>Iniciar secion</h2>
+                    <div class="info">
+                        <label>Usuario</label>
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label>Contraseña</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="bnt_enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="bloque">
+        <div>
+            <h2>Nuestros servicios</h2>
+        </div>
+        <div class="contenido">
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="../img/piscina.png"><h2>Piscinas</h2></a>
+            </div>
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="../img/bar.png"><h2>Bar</h2></a>
+            </div>
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="../img/escudo.jpg"><h2>Escudo</h2></a>
+            </div>
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="./img/banner/img2.png"><h2>paisaje</h2></a>
+            </div>
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="./img/banner/img1.png"><h2>Paisaje dos</h2></a>
+            </div>
+        </div>
+    </section>
+    <section id="reservas" class="bloque">
+        <div class="conenido">
+            <div><h2>Desea reservar?</h2></div>
+            <div class="contenido">
+                <p>Las presentes condiciones generales estan sijetas a lo dispuesto en la NTSH Sectorial Colombiana 003 (2023-02-24) <br>
+                Esta norma tiene como objeto proporcionar los requisitos para ofrecer productos y servicios dando respuesta al cliente,
+                realizar check in y check out de huespedees y reservar habitaciones de acuerdo con procedimientos definidos en los 
+                establecimientos de alojamiento y hospedaje.</p>
+                <div class="item clausura">
+                    <div class="overlay"></div>
+                    <a href="../img/aprendices.jpg"><h2>Clausuras</h2></a>
+                </div>
+                <div class="item condiciones">
+                    <div class="overlay"></div>
+                    <a href="../img/fondo banner2.png"><h2>Condiciones de pago</h2></a>
+                </div>
+                <div class="item reservas">
+                    <div class="overlay"></div>
+                    <a href="../img/banner3.jpg"><h2>Reservas</h2></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactenoos" class="bloque">
+        <div class="contenido">
+            <div class="datos">
+                <div class="icono">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="datos_dir">
+                    <h2>Direccion</h2>
+                    <h3>Calle 13 #234-01 Este</h3>
+                </div>
+            </div>
+
+            <div class="datos">
+                <div class="icono">
+                    <i class="fa-solid fa-mobile-retro"></i>
+                </div>
+                <div class="datos_telefono">
+                    <h2>Telefono</h2>
+                    <h3>(+57) 3137653123</h3>
+                </div>
+            </div>
+
+            <div class="datos">
+                <div class="icono">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="datos_email">
+                    <h2>Email</h2>
+                    <h3>estamejor@gmail.com</h3>
+                </div>
+            </div>
+
+            <div class="datos">
+                <div class="icono">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="datos_whatsapp">
+                    <h2>Whatsapp</h2>
+                    <h3>4145913749</h3>
+                </div>
+            </div>
+
+
+            <div class="formulario">
+                <form action="#intro">
+                    <h2>Enviar mensaje</h2>
+                    <div class="info">
+                        <label>Nombre</label>
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label>Apellido</label>
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label>Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="info">
+                        <label>Mensaje</label>
+                        <textarea cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="btn_enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="registro" class="bloque">
+        <div class="registrarse">
+            <form action="#intro">
+                
+                <h2>REGISTRATE</h2>
+                <div class="info">
+                    <label>Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Apellido</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="info">
+                    <label>Tipo de documento</label>
+                    <select>
+                        <option>Cedula de ciudaddania</option>
+                        <option>Cedula de extrangeria</option>
+                        <option>Psaporte</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <label>Acepto terminos y condiciones</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="btn_enviar">
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
